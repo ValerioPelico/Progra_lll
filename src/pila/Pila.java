@@ -1,5 +1,5 @@
-// autor @valerio Pelicó
-//0901-16-11957
+// autor @valerio Pelicó Guox
+//0901-16-11957  
 import java.util.Scanner;
 import javax.swing.JOptionPane;
 //creamos la clase pila
