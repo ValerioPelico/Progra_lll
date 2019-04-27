@@ -1,4 +1,7 @@
- import java.util.Scanner;
+// autor @valerio Pelicó
+//0901-16-11957
+import java.util.Scanner;
+import javax.swing.JOptionPane;
 //creamos la clase pila
 public class Pila
 {   //encapsulamos los elementos
@@ -86,28 +89,21 @@ public class Pila
         int intTamaño,opcion;
         String dato;
         Scanner teclado=new Scanner(System.in);
-        System.out.println("--------------------------Programa de pilas----------------------------");
+        JOptionPane.showMessageDialog(null,"Programa de pilas");
         System.out.println("ingrese el Tamaño de la pila: ");
         intTamaño=teclado.nextInt();
         Pila pila=new Pila(intTamaño);
         //creamos switch para que ejecute el menu mientras el usuario no ingrese el numero 5
        
-            System.out.println("1. Ingresar dato");
-            System.out.println("2. Eliminar dato");
-            System.out.println("3. Mostrar datos");
-            System.out.println("4. Buscar dato");
-            System.out.println("5. Salir");
-            System.out.println("Que ingrese su opcion ");
-            opcion=teclado.nextInt();
-            
-        do
-        {
+          do
+        {   System.out.println("Que desea hacer? ");
             System.out.println("1. Agregar dato");
             System.out.println("2. Eliminar dato");
             System.out.println("3. Mostrar datos");
             System.out.println("4. Buscar dato");
             System.out.println("5. Salir");
-            System.out.println("Que desea hacer? ");
+            
+            
             opcion=teclado.nextInt();
             switch(opcion)
             {
