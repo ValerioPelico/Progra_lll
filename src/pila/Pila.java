@@ -39,11 +39,11 @@ public class Pila
         if(tope>0)
         {//dejamos fuera al ultimo elemento de la pila
             tope--;
-            System.out.println("Dato eliminado");
+            System.out.println("+++++Dato eliminado+++++");
         }
         else
         {
-            System.out.println("Ya no hay datos para eliminar");
+            System.out.println("+++++Ya no hay datos para eliminar+++++");
         }
     }
      //Metodo que muestra los datos del ultimo al primero
@@ -58,7 +58,7 @@ public class Pila
             }
         }
         else 
-            System.out.println("Pila vacia");
+            System.out.println("+++++Pila vacia+++++");
     }
     //metodo para buscar un dato en la pila
     private boolean Buscar(String dato)
@@ -89,7 +89,7 @@ public class Pila
         int intTamaño,opcion;
         String dato;
         Scanner teclado=new Scanner(System.in);
-        JOptionPane.showMessageDialog(null,"Programa de pilas");
+        JOptionPane.showMessageDialog(null,"Bienvenido\n"+"Programa de pilas");
         System.out.println("ingrese el Tamaño de la pila: ");
         intTamaño=teclado.nextInt();
         Pila pila=new Pila(intTamaño);
@@ -123,9 +123,9 @@ public class Pila
                 case 4:
                     System.out.println("Dato a buscar: ");
                     dato=teclado.next();
-                    if(pila.Buscar(dato)) System.out.println("Dato encontrado");
+                    if(pila.Buscar(dato)) System.out.println("+++++Dato encontrado+++++");
                     else
-                        System.out.println("Dato no encontrado");
+                        System.out.println("+++++Dato no encontrado+++++");
                     break;
             }
         }while(opcion!=5);
